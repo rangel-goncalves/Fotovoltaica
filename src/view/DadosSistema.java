@@ -5,12 +5,10 @@
 package view;
 
 import java.awt.Desktop;
-import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
-import java.io.InputStreamReader;
 
 /**
  *
@@ -211,26 +209,6 @@ public class DadosSistema extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-        /*
-        File arquivoPDF = new File("src/Documentos/Canadian_Solar-Datasheet-CS7L-MS-575-605-V1.6C1_AU.pdf");
-
-            // Verificar se o Desktop é suportado neste sistema
-        if (Desktop.isDesktopSupported()) {
-            try {
-                Desktop desktop = Desktop.getDesktop();
-
-                // Verifica se o arquivo existe antes de tentar abrir
-                if (arquivoPDF.exists()) {
-                    desktop.open(arquivoPDF); // Abre o arquivo com o programa padrão do sistema
-                } else {
-                    System.out.println("O arquivo PDF não foi encontrado.");
-                }
-            } catch (IOException e) {
-                System.out.println("Erro ao tentar abrir o arquivo PDF: " + e.getMessage());
-            }
-        } else {
-            System.out.println("A classe Desktop não é suportada neste sistema.");
-        }*/
                 InputStream pdfStream = DadosSistema.class.getResourceAsStream("/Documentos/Canadian_Solar-Datasheet-CS7L-MS-575-605-V1.6C1_AU.pdf");
         
         if (pdfStream == null) {

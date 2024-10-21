@@ -4,10 +4,8 @@
  */
 package view;
 
-import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileOutputStream;
-import java.io.InputStreamReader;
 import java.io.IOException;
 import java.io.InputStream;
 import javax.swing.JFileChooser;
@@ -177,24 +175,6 @@ public class Home extends javax.swing.JFrame {
                                     "--caminho_arquivo", absolutePath);
             // Inicia o processo
             process = pb1.start();
-            /*
-            // Lê a saída padrão do script Python
-            BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()));
-            String line;
-            while ((line = reader.readLine()) != null) {
-                System.out.println("Output: " + line);  // Exibe a saída no console Java
-            }
-            
-            // Lê a saída de erro (stderr)
-            BufferedReader errorReader = new BufferedReader(new InputStreamReader(process.getErrorStream()));
-            while ((line = errorReader.readLine()) != null) {
-                System.err.println("Error: " + line);  // Exibe os erros do script no console
-            }
-
-            // Verifica se o processo terminou com sucesso
-            int exitCode = process.waitFor();
-            System.out.println("Exit code: " + exitCode);
-            */
         } catch (IOException e) {
             e.printStackTrace();
         }

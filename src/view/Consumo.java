@@ -210,7 +210,6 @@ public class Consumo extends javax.swing.JFrame {
                 }
             }
             // Comando para executar o script Python
-            //ProcessBuilder pb = new ProcessBuilder("python", "src/Scripts/main.py");
             ProcessBuilder pb = new ProcessBuilder(
                     "python", 
                     tempScript.getAbsolutePath(), 

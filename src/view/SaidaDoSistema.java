@@ -235,7 +235,6 @@ public class SaidaDoSistema extends javax.swing.JFrame {
                 }
             }
             // Comando para executar o script Python
-            //ProcessBuilder pb = new ProcessBuilder("python", "src/Scripts/main.py");
             ProcessBuilder pb = new ProcessBuilder("python", tempScript.getAbsolutePath(), "func5",
                 "--numplacas", this.lblNumPlacas.getText(),
                 "--datetime", this.TxtHora.getText(),
