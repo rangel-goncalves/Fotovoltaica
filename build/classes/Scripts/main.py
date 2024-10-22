@@ -488,7 +488,7 @@ def pot_indutiva(data_procurada, NumPlacas):
     v = Vp_inversor * np.cos(w * t)
     i = Ip_inversor * np.cos(w * t - theta)
 
-    L = 50 * 10 ** -3  # Indutância em Henrys
+    L = 5 * 10 ** -3  # Indutância em Henrys
     # Cálculo da tensão indutiva
     # VL = -np.max(i) * (w * L) * np.sin(w * t)
     VL = -Ip_inversor * (w * L) * np.sin(w * t)
@@ -516,7 +516,7 @@ def pot_indutiva(data_procurada, NumPlacas):
 
 
 if __name__ == "__main__":
-    plim = 2000
+    plim = 7000
     parser = argparse.ArgumentParser(description="Escolha a função para executar.")
     parser.add_argument("func", choices=["func1", "func2", "func3", "func4", "func5", "func6", "func7"], help="Função para executar")
     # Adicionando argumentos para func3
